@@ -5,7 +5,7 @@
         <ros2_control name="RoboClawSystem" type="system">
             <hardware>
                 <plugin>roboclaw_hardware_interface/RoboClawHardwareInterface</plugin>
-                <param name="serial_port">/dev/serial0</param>
+                <param name="serial_port">/dev/ttyACM0</param>
                 <param name="serial_baud" type="int">115200</param>
             </hardware>
             <joint name="left_wheel_joint">
@@ -53,7 +53,7 @@
 
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-            <parameters>$(find articubot_one)/config/my_controllers.yaml</parameters>
+            <parameters>$(find articubot_one)/config/robot_controllers.yaml</parameters>
             <parameters>$(find articubot_one)/config/gaz_ros2_ctl_use_sim.yaml</parameters>
         </plugin>
     </gazebo>
