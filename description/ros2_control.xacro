@@ -5,7 +5,7 @@
         <ros2_control name="RoboClawSystem" type="system">
             <hardware>
                 <plugin>roboclaw_hardware_interface/RoboClawHardwareInterface</plugin>
-                <param name="serial_port">/dev/roboclaw</param>
+                <param name="serial_port">/dev/ttyS0</param>
             </hardware>
             <joint name="left_wheel_joint">
                 <command_interface name="velocity"/>

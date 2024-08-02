@@ -8,12 +8,17 @@ Note that each directory currently has at least one file in it to ensure that gi
 
 
 `sudo apt install ros-humble-xacro`
+
 `sudo apt install ros-humble-twist-mux`
+
 `sudo apt install ros-humble-controller-manager`
+
 `sudo apt install ros-humble-ros2-control`
+
 `sudo apt install ros-humble-ros2-controllers`
 
-
 `sudo apt install ros-humble-navigation2`
+
 `sudo apt install ros-humble-cartographer`
+
 `sudo apt install ros-humble-cartographer-ros`
