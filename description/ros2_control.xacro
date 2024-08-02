@@ -5,7 +5,7 @@
         <ros2_control name="RoboClawSystem" type="system">
             <hardware>
                 <plugin>roboclaw_hardware_interface/RoboClawHardwareInterface</plugin>
-                <param name="serial_port">/dev/serial0</param>
+                <param name="serial_port">/dev/ttyS0</param>
                 <param name="serial_baud" type="int">38400</param>
             </hardware>
             <joint name="left_wheel_joint">
