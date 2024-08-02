@@ -32,7 +32,7 @@ def generate_launch_description():
         package="twist_mux",
         executable="twist_mux",
         parameters=[twist_mux_config],
-        remappings=[('/cmd_vel_out','/diffbot_base_controller/cmd_vel_unstamped')]
+        remappings=[('/cmd_vel_out','/diff_drive_base_controller/cmd_vel_unstamped')]
     )
 
     xacro_file_path = PathJoinSubstitution([
@@ -73,7 +73,7 @@ def generate_launch_description():
     robot_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["diffbot_base_controller", "--controller-manager", "/controller_manager"],
+        arguments=["diff_drive_base_controller", "--controller-manager", "/controller_manager"],
         output="both",
     )
 
