@@ -32,7 +32,7 @@ def generate_launch_description():
         package="twist_mux",
         executable="twist_mux",
         parameters=[twist_mux_config],
-        remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+        remappings=[('/cmd_vel_out','/diffbot_base_controller/cmd_vel_unstamped')]
     )
 
     xacro_file_path = PathJoinSubstitution([
