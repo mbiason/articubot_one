@@ -40,7 +40,7 @@ def generate_launch_description():
     ])
 
     robot_description = {
-        "robot_description": Command(['xacro ', xacro_file_path, ' use_ros2_control:=', True, ' sim_mode:=', False]),
+        "robot_description": Command(['xacro ', xacro_file_path, ' use_ros2_control:=', 'true', ' sim_mode:=', 'false']),
         "use_sim_time": False
     }
 
